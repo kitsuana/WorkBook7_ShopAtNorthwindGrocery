@@ -3,11 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Northwind Search</title>
     <link href="assets/css/search.css" rel="stylesheet" />
 </head>
 <body>
-    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="search.html" class="active">Search</a>
+    </nav>
+
+    <h1>Northwind Grocery</h1>
+
+    <div id="selects-container">
+        <select id="top-select-menu">
+            <option>Select One...</option>
+            <option>Search by Category</option>
+            <option>View All</option>
+        </select>
+        <select id="category-select" class="invisible"></select>
+    </div>
+
+    <div id="products-list"></div>
 
     <script src="assets/js/search.js"></script>
 </body>
